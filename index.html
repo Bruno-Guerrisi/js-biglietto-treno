@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Password genertor</title>
+</head>
+<body>
+
+    <div class="container_box">
+
+        <div class="box box_title">
+            <h1>Train travel prices</h1>
+        </div>
+
+        <div class="box box_generator">
+
+            <div class="box_container">
+
+                <button class="button_price_train" onclick="ageFunction()">Età passeggero</button>
+
+                <p class="info_text" id="age_passenger">Clicca il pulsante per inserire l'età del passeggero</p>
+            </div>
+
+            <div class="box_container">
+
+                <button class="button_price_train" onclick="priceFunction()">Chilometri</button>
+
+                <p class="info_text" id="distance_train">Clicca il pulsante per inserire i chilometri da percorrere in treno</p>
+            </div>
+
+            <div class="box_container box_container_pricer_train">
+
+                <button class="button_price_train" onclick="calcolateFunction()">Calcolare</button>
+
+                <p class="info_text" id="price_train">Prezzo</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="./js/myscript.js"></script>
+</body>
+</html>
