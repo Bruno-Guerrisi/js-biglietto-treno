@@ -9,14 +9,14 @@
 function ageFunction() {
   const age = parseInt(prompt('Quanti anni hai?')) ;
 
-  document.getElementById('age_passenger').innerHTML = `${age}`;
+  document.getElementById('age_passenger').innerHTML = `Età passeggero: ${age}`;
 }
 
 
 function priceFunction() {
   const distance = parseInt(prompt('Quanti chilometri percorrerai in treno?')) ;
 
-  document.getElementById('distance_train').innerHTML = `${distance}`;
+  document.getElementById('distance_train').innerHTML = `Distanza da percorrere: ${distance}`;
 }
 
 function calcolateFunction() {
@@ -27,15 +27,11 @@ function calcolateFunction() {
 
     price = ( price * 20 ) / 100;
 
-  } else if ( (age > 18 ) && ( age < 65 ) ){
-
-    price = distance * 0.21;
-
   } else if( age > 65){
 
     price = ( price * 40 ) / 100;
 
   }
 
-  document.getElementById('price_train').innerHTML = `${price}`;
+  document.getElementById('price_train').innerHTML = `Prezzo biglietto: ${price}`;
 }
