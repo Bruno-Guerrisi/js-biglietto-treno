@@ -1,27 +1,33 @@
+let age;
+let distance;
+let price;
 
-
-
-
-
-
-
+let price_train_final;
 
 function ageFunction() {
-  const age = parseInt(prompt('Quanti anni hai?')) ;
+  age = parseInt(prompt('Quanti anni hai?')) ;
+
+  /* if( isNaN(age) ){
+    document.getElementById('age_passenger').innerHTML = `Valore errato, reinserire`;
+  } */
 
   document.getElementById('age_passenger').innerHTML = `Età passeggero: ${age}`;
 }
 
 
-function priceFunction() {
-  const distance = parseInt(prompt('Quanti chilometri percorrerai in treno?')) ;
+function distanceFunction() {
+  distance = parseFloat(prompt('Quanti chilometri percorrerai in treno?')) ;
+
+  /* if( isNaN(distance) ){
+    document.getElementById('distance_train').innerHTML = `Valore errato, reinserire`;
+  } */
 
   document.getElementById('distance_train').innerHTML = `Distanza da percorrere: ${distance}`;
 }
 
-function calcolateFunction() {
+function priceFunction() {
 
-  let price = distance * 0.21 ;
+  price = distance * 0.21 ;
 
   if( age < 18 ){
 
@@ -33,5 +39,7 @@ function calcolateFunction() {
 
   }
 
-  document.getElementById('price_train').innerHTML = `Prezzo biglietto: ${price}`;
+  price_train_final = price.toFixed(2);
+
+  document.getElementById('price_train').innerHTML = `Prezzo biglietto: ${price_train_final}`;
 }
