@@ -31,11 +31,11 @@ function priceFunction() {
 
   if( age < 18 ){
 
-    price = ( price * 20 ) / 100;
+    price = price - ( ( price * 20 ) / 100 );
 
   } else if( age > 65){
 
-    price = ( price * 40 ) / 100;
+    price = price - ( ( price * 40 ) / 100 );
 
   }
 
